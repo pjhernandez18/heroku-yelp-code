@@ -82,4 +82,12 @@ img.img-logo {
     color: black;
     float:left;
 }
-.form-group 
+.sub-header h4{
+
+}
+.sub-header img{
+
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
