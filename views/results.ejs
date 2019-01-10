@@ -145,10 +145,11 @@
 					  			<li class="list-group-item d-flex justify-content-between align-items-center">
 					  				<div class="media">
 					  					<div class="media-left">
-						  					<img class="rounded img-thumbnail" src="<%= item.image_url%>" height="210" width="210"/>
+						  					<img class="media-object" src="<%= item.image_url%>" height="210" width="210"/>
 						  				</div>
-						  				<div class="media-body">
-						  					<h4 class="media-heading"><%= item.name %></h4>
+						  				<div class="media-body" style="margin-left:20px;">
+						  					<a href="<%= item.url%>"><h4 class="media-heading" style="height:40px;"><%= item.name %> <img style="margin-bottom:8px;"height="60px" width="80px" src="assets/Yelp_trademark_RGB_outline.png"></h4></a> </br>
+						  					<h5 style="float: left;">Rating: <%= item.rating%>/5  |  <%= item.price%></h5>
 						  				</div> 
 						  			</div>
 					  			</li>
