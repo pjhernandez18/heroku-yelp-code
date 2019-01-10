@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page-header.page-header-white {
+    background-color: white;
+    height: 120vh;
+    min-height: 600px;
+    max-height: none;
+    transform: translate3d(0,0,0) !important;
+}
+
+.page-header.page-header-white .content-center .motto .description {
+    color: rgb(0, 0, 0);
+}
+
+.img-logo-wrapper{
+	position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+img.img-logo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.img-social.fab {
+    color: black;
+    height: 5 0px;
+    max-width: 100%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+#social_images {
+    text-align: center;
+}
+
+.navbar-scope.navbar-transparent .navbar-brand,
+[class*="bg"] .navbar-brand {
+    color: white;
+}
+
+.navbar-scope.navbar-transparent .navbar-nav .nav-item .nav-link:not(.btn),
+[class*="bg"] .navbar-nav .nav-item .nav-link:not(.btn) {
+    color: white;
+}
+
+.navbar-scope.navbar-transparent .navbar[class*="bg-"] .navbar-toggler .navbar-toggler-bar,
+.navbar.navbar-transparent .navbar-toggler .navbar-toggler-bar {
+    background-color: #66615B;
+}
+.btn.btn-scope {
+    border-color: rgb(0,191,255);
+    background-color: rgb(0,191,255);
+}
+.btn.btn-scope:hover,
+.btn.btn-scope:active,
+.btn.btn-scope:focus {
+    border-color: #696969;
+    background-color: #696969;
+}
+
+#particles-bg canvas {
+    position: absolute;
+}
+
+.icon-item{
+    color: rgb(0,191,255);
+}
+.row{
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-form label {
+    color: black;
+    float:left;
+}
+.form-group label {
+    color: black;
+    float:left;
+}
+.form-group 

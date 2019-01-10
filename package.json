@@ -1,0 +1,14 @@
+{
+	"name": "yelp-server",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "4.16.4",
+		"yelp-fusion": "^2.2.1"
+	},
+	"author": "PJ Hernandez",
+	"license": "ISC"
+}
