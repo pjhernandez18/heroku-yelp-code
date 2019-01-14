@@ -34,7 +34,7 @@ app.post('/suggest', urlencodedParser, function(req, res){
 	  term: req.body.term,
 	  location: req.body.location
 	}).then(response => {
-	  console.log(response.jsonBody);
+	  console.log(response.jsonBody.businesses[0].location);
 	  // store json result in local variable
 	  var results = response.jsonBody;
  	  res.render('results', {data: response.jsonBody});
@@ -42,7 +42,7 @@ app.post('/suggest', urlencodedParser, function(req, res){
 	}).catch(e => {
 	  console.log(e);
 	});
-	// render results page with yelp data
+	
 });
 
 app.listen(port, function() {
