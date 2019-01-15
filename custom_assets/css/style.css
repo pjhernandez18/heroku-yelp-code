@@ -91,3 +91,6 @@ img.img-logo {
     width: 100px;
     height: 90px;
 }
+.link.hover:hover {
+    text-decoration: underline;
+}   

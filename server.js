@@ -34,14 +34,17 @@ app.post('/suggest', urlencodedParser, function(req, res){
 	  term: req.body.term,
 	  location: req.body.location
 	}).then(response => {
-	  console.log(response.jsonBody.businesses[0].location);
+	  console.log(response.jsonBody);
 	  // store json result in local variable
 	  var results = response.jsonBody;
  	  res.render('results', {data: response.jsonBody});
-
 	}).catch(e => {
 	  console.log(e);
 	});
+
+	  
+
+
 	
 });
 
