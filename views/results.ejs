@@ -124,13 +124,13 @@
 					  						<h5 class="link"><a href=" http://maps.google.com/?q=<%=item.name%>"style="float: left;"><%=item.location.address1%>, <%=item.location.city%> <%=item.location.zip_code%></a></h5>
 					  						</br>
 						  					</br>
-						  					<button id="suggest_btn" class="btn btn-scope" data-toggle="modal" data-target="#suggestionForm<%item.id%>"style="float: left;">Suggest</button>
+						  					<button id="suggest_btn" class="btn btn-scope" data-toggle="modal" data-target="#suggestionForm<%=item.id%>"style="float: left;">Suggest</button>
 						  				</div> 
 
 						  			</div>	
 					  			</li>
-
-									<div id="suggestionForm<%item.id%>" class="modal fade" role="dialog">
+					  			
+									<div id="suggestionForm<%=item.id%>" class="modal fade" role="dialog">
 								  <div class="modal-dialog">
 								    <!-- Modal content-->
 								    <form id="suggest" class="modal-content">
