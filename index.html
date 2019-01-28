@@ -5,7 +5,6 @@
 
 	Copyright © 2018 Paul Jerome Hernandez. All rights reserved. 
 -->
-<!-- Created using Paper Kit 2.0 with their sample landing page-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,14 +40,12 @@
 
 </head>
 <body>
-
-
-<!--    Navbar here         
+<!--    Navbar here    -->     
 <nav class="navbar navbar-scope navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
 	<div class="container">
 		<div class="navbar-translate">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="../index.html">USC's Supper Club</a>
+				<a class="navbar-brand" href="https://thesupperclubsc.com/#">USC's Supper Club</a>
 			</div>
 			<button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-bar"></span>
@@ -59,47 +56,41 @@
 	        <div class="collapse navbar-collapse">
 	            <ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-about" data-smooth-scroll="true">About</a>
+	                    <a class="nav-link" href="https://thesupperclubsc.com/#section-about" data-smooth-scroll="true">About</a>
 	                </li>
 	                <li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-team" data-smooth-scroll="true">Team</a>
+	                    <a class="nav-link" href="https://thesupperclubsc.com/#section-team" data-smooth-scroll="true">Team</a>
 	                </li>
 	                  <li class="nav-item">
-	                    <a class="nav-link" href="#">Restaurants</a>
+	                    <a class="nav-link" href="#">Suggestions?</a>
 	                </li>
 					    <li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-contact" data-smooth-scroll="true">Contact</a>
+	                    <a class="nav-link" href="https://thesupperclubsc.com/#section-contact" data-smooth-scroll="true">Contact</a>
 	                </li>
 	                  </li>
-					    <li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-calendar" data-smooth-scroll="true">Calendar</a>
-	                </li>
 	                    </li>
-					    <li class="nav-item">
-	                    	<button class="btn btn-scope">
-						<i class="nc-icon nc-badge"></i> Apply
-					</button>
+						<li class="nav-item">
+	                    	<a class="btn btn-scope" href="https://docs.google.com/forms/d/e/1FAIpQLSd4Jcn6RyRWBVPCMkAyMxuBzzqwFaFJBPin_F8EGQ-UnKXR6A/viewform?vc=0&c=0&w=1">
+						<i class="nc-icon nc-badge"></i> Join</a>
 	                </li>
 	            </ul>
 	        </div>
 		</div>
-    </nav>
- End navbar -->
-
-<!-- End where we've been--> 
-  <div class="wrapper">
-		<div class="section text-center landing-section" id ="section-yelp-search">
+	</nav>
+	
+	<div class="wrapper">
+		<div class="section text-center landing-section page-header page-header-white" id ="section-yelp-search" data-parallax="true" style="background-image: url('custom_assets/img/wooden.jpg');">
             <div class="container"> 
-                <h2 class="title">Suggestions?</h2>
-                <h5 class="title">Powered by <img style="margin-bottom:8px;"height="60px" width="80px" src="assets/Yelp_trademark_RGB_outline.png"></h5>
+                <h2 class="title"><strong>Suggestions?</strong></h2>
+                <h5 class="title"><strong>Powered by</strong><img style="margin-bottom:8px;"height="60px" width="80px" src="assets/Yelp_trademark_RGB_outline.png"></h5>
 	                <form name="suggestion" method="POST" action="/suggest">
 						<div class="form-group">
-						    <label for="validationDefault01">Find</label>
-						    <input type="text" class="form-control" name="term" id="validationDefault01" placeholder="restaurants, tacos, pizza, kbbq, FOOD..." required/>
+						    <label><strong>Find</strong></label>
+						    <input type="text" class="form-control" name="term" id="validationDefault01" placeholder="restaurants, tacos, pizza, kbbq, FOOD..."/>
 						 </div>
 						 <div class="form-group">
-						    <label for="validationDefault02">Location</label>
-						    <input type="text" class="form-control" name="location" id="validationDefault02" placeholder="address, neighborhood, state, zip..." required/>
+						    <label><strong>Location</strong></label>
+						    <input type="text" class="form-control" name="location" id="validationDefault02" placeholder="address, neighborhood, state, zip..."/>
 						  </div>
 					     <div class="form-group">
 					      	<input id="search_btn" type="submit" class="btn btn-scope"/><!-- Search</button> -->
@@ -111,21 +102,21 @@
         </div>
    </div>
 
-</div><!-- Core JS Files -->
+</div>
 
-
+<!-- Core JS Files -->
 <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
 <script>
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBrBJINTyrj-hVk-okUJXGyN9WxBJlNQZo",
-    authDomain: "yelp-suggestions.firebaseapp.com",
-    databaseURL: "https://yelp-suggestions.firebaseio.com",
-    projectId: "yelp-suggestions",
-    storageBucket: "yelp-suggestions.appspot.com",
-    messagingSenderId: "244518432407"
-  };
-  firebase.initializeApp(config);
+  // var config = {
+  //   apiKey: "AIzaSyBrBJINTyrj-hVk-okUJXGyN9WxBJlNQZo",
+  //   authDomain: "yelp-suggestions.firebaseapp.com",
+  //   databaseURL: "https://yelp-suggestions.firebaseio.com",
+  //   projectId: "yelp-suggestions",
+  //   storageBucket: "yelp-suggestions.appspot.com",
+  //   messagingSenderId: "244518432407"
+  // };
+  // firebase.initializeApp(config);
 </script>
   <!-- Firebase App is always required and must be first -->
     <script src="/__/firebase/5.7.2/firebase-app.js"></script>

@@ -82,15 +82,11 @@ img.img-logo {
     color: black;
     float:left;
 }
-.sub-header h4{
-
-}
 .sub-header img{
 
     position: relative;
     width: 100px;
     height: 90px;
 }
-.link.hover:hover {
-    text-decoration: underline;
-}   
+ 
+

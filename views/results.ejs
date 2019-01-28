@@ -43,12 +43,11 @@
 <body>
 
 
-<!--    Navbar here         
 <nav class="navbar navbar-scope navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
 	<div class="container">
 		<div class="navbar-translate">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="../index.html">USC's Supper Club</a>
+				<a class="navbar-brand" href="https://thesupperclubsc.com/#">USC's Supper Club</a>
 			</div>
 			<button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-bar"></span>
@@ -56,50 +55,45 @@
 				<span class="navbar-toggler-bar"></span>
 			</button>
 		</div>
-	        <div class="collapse navbar-collapse">
-	            <ul class="navbar-nav ml-auto">
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-about" data-smooth-scroll="true">About</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-team" data-smooth-scroll="true">Team</a>
-	                </li>
-	                  <li class="nav-item">
-	                    <a class="nav-link" href="#">Restaurants</a>
-	                </li>
-					    <li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-contact" data-smooth-scroll="true">Contact</a>
-	                </li>
-	                  </li>
-					    <li class="nav-item">
-	                    <a class="nav-link" href="../index.html#section-calendar" data-smooth-scroll="true">Calendar</a>
-	                </li>
-	                    </li>
-					    <li class="nav-item">
-	                    	<button class="btn btn-scope">
-						<i class="nc-icon nc-badge"></i> Apply
-					</button>
-	                </li>
-	            </ul>
-	        </div>
+						<a class="nav-link" href="https://thesupperclubsc.com/#section-about" data-smooth-scroll="true">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://thesupperclubsc.com/#section-team" data-smooth-scroll="true">Team</a>
+					</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Suggestions?</a>
+					</li>
+						<li class="nav-item">
+						<a class="nav-link" href="https://thesupperclubsc.com/#section-contact" data-smooth-scroll="true">Contact</a>
+					</li>
+						</li>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-scope" href="https://docs.google.com/forms/d/e/1FAIpQLSd4Jcn6RyRWBVPCMkAyMxuBzzqwFaFJBPin_F8EGQ-UnKXR6A/viewform?vc=0&c=0&w=1">
+						<i class="nc-icon nc-badge"></i> Join</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-    </nav>
- End navbar -->
+	</nav>
 
 <!-- End where we've been--> 
-  <div class="wrapper" id="section-suggestion">
-		<div class="section text-center landing-section" id ="yelp-suggestions">
+    <div class="wrapper" id="section-suggestion">
+		<div class="section text-center landing-section" id ="section-yelp-search" data-parallax="true" style="background-image: url('../custom_assets/img/wooden.jpg');">
             <div class="container"> 
-                 <h2 class="title">Suggestions?</h2>
-                <h5 class="title">Powered by <img style="margin-bottom:8px;"height="60px" width="80px" src="assets/Yelp_trademark_RGB_outline.png"></h5>
+				<h2 class="title"><strong>Suggestions?</strong></h2>
+                <h5 class="title"><strong>Powered by</strong><img style="margin-bottom:8px;"height="60px" width="80px" src="../assets/Yelp_trademark_RGB_outline.png"></h5>
 	                <form name="suggestion" method="POST" action="/suggest" >
 						<div class="form-group">
 						    <label for="validationDefault01">Find</label>
-						    <input type="text" class="form-control" name="term" id="validationDefault01" placeholder="restaurants, tacos, pizza, kbbq, FOOD..." required/>
+						    <input type="text" class="form-control" name="term" id="validationDefault01" placeholder="restaurants, tacos, pizza, kbbq, FOOD...">
 						 </div>
 						 <div class="form-group">
 						    <label for="validationDefault02">Location</label>
-						    <input type="text" class="form-control" name="location" id="validationDefault02" placeholder="address, neighborhood, state, zip..." required/>
+						    <input type="text" class="form-control" name="location" id="validationDefault02" placeholder="address, neighborhood, state, zip...">
 						  </div>
 					     <div class="form-group">
 					      	<input id="search_btn" type="submit" class="btn btn-scope"/><!-- Search</button> -->
@@ -124,35 +118,11 @@
 					  						<h5 class="link"><a href=" http://maps.google.com/?q=<%=item.name%>"style="float: left;"><%=item.location.address1%>, <%=item.location.city%> <%=item.location.zip_code%></a></h5>
 					  						</br>
 						  					</br>
-						  					<button id="suggest_btn" class="btn btn-scope" data-toggle="modal" data-target="#suggestionForm<%=item.id%>"style="float: left;">Suggest</button>
+						  					<button id="suggest_btn" class="btn btn-scope" data-toggle="modal" data-target="#suggestionForm" data-myval="<%=item.name%>" style="float: left;">Suggest</button>
 						  				</div> 
-
 						  			</div>	
 					  			</li>
-					  			
-									<div id="suggestionForm<%=item.id%>" class="modal fade" role="dialog">
-								  <div class="modal-dialog">
-								    <!-- Modal content-->
-								    <form id="suggest" class="modal-content">
-								      <div class="modal-header">
-								        <button type="button" class="close" data-dismiss="modal">&times;</button>
-								        <h4><%=item.name%></h4>
-								      </div>
-								      <div class="form-group">
-									      <label for="name">Name</label>
-									      <input class="form-control" id="name" placeholder="Enter name" name="name">
-									   </div>
-								       <div class="form-group">
-									      <label for="reason">Why this place?</label>
-									      <input class="form-control" id="reason" placeholder="Enter reason" name="reason">
-									   </div>
-								      <div class="modal-footer">
-								        <button type="submit" class="btn btn-default" data-dismiss="modal">Submit</button>
-								      </div>
-								    </div>
-								  </div>
-
- 
+					  		
 					  		<% }); %>
 					  		</ul>
 					     </div>
@@ -163,23 +133,67 @@
         </div>
    </div>
 
-</div>
+	<div id="suggestionForm" class="modal fade"tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <!-- Modal content-->
+	    <form id="suggest" class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 id="modal-myval"></h4>
+	      </div>
+	      <div class="form-group">
+		      <label for="name">Name</label>
+		      <input class="form-control" id="name" placeholder="Enter name" name="name">
+		   </div>
+	       <div class="form-group">
+		      <label for="reason">Why this place?</label>
+		      <input class="form-control" id="reason" placeholder="Enter reason" name="reason">
+		   </div>
+	      <div class="modal-footer">
+	        <button type="submit" class="btn btn-default" data-dismiss="modal">Submit</button>
+	      </div>
+	 	 </form>
+  	  </div>
+	</div>
 
+<script>
+  // data-* attributes to scan when populating modal values
+  var ATTRIBUTES = ['myval'];
 
+  $('[data-toggle="modal"]').on('click', function (e) {
+    // convert target (e.g. the button) to jquery object
+    var $target = $(e.target);
+    // modal targeted by the button
+    var modalSelector = $target.data('target');
+   
+    // iterate over each possible data-* attribute
+    ATTRIBUTES.forEach(function (attributeName) {
+    // retrieve the dom element corresponding to current attribute
+    var $modalAttribute = $(modalSelector + ' #modal-' + attributeName);
+    var dataValue = $target.data(attributeName);
+    
+    // if the attribute value is empty, $target.data() will return undefined.
+    // In JS boolean expressions return operands and are not coerced into
+    // booleans. That way is dataValue is undefined, the left part of the following
+    // Boolean expression evaluate to false and the empty string will be returned
+    $modalAttribute.text(dataValue || '');
+  });
+});
 
+</script>
 <!-- Core JS Files -->
 <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBrBJINTyrj-hVk-okUJXGyN9WxBJlNQZo",
-    authDomain: "yelp-suggestions.firebaseapp.com",
-    databaseURL: "https://yelp-suggestions.firebaseio.com",
-    projectId: "yelp-suggestions",
-    storageBucket: "yelp-suggestions.appspot.com",
-    messagingSenderId: "244518432407"
-  };
-  firebase.initializeApp(config);
+  // // Initialize Firebase
+  // var config = {
+  //   apiKey: "AIzaSyBrBJINTyrj-hVk-okUJXGyN9WxBJlNQZo",
+  //   authDomain: "yelp-suggestions.firebaseapp.com",
+  //   databaseURL: "https://yelp-suggestions.firebaseio.com",
+  //   projectId: "yelp-suggestions",
+  //   storageBucket: "yelp-suggestions.appspot.com",
+  //   messagingSenderId: "244518432407"
+  // };
+  // firebase.initializeApp(config);
 </script>
   <!-- Firebase App is always required and must be first -->
     <script src="/__/firebase/5.7.2/firebase-app.js"></script>
