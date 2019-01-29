@@ -8,39 +8,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>USC's Supper Club</title>
-	<meta charset="utf-8" />
-	<!--  Change link icon to supper club's icon-->
-	<link rel="icon" type="image/png" href="custom_assets/img/supper_club_logo_KsU_icon.ico">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="google-site-verification" content="nD3n4g3gzv_Hhe7zpqoLMuJ_X39tzeMY-p4fdqZzWJc" />
-	<meta property="og:title" content="The Supper Club USC">
-	<meta property="og:description" content="The Supper Club is USC's club for LA foodies. Explore LA and dine with us.">
-	<meta property="og:image" content="../custom_assets/img/supper_club_logo_KsU_icon.ico">
-	<meta property="og:site_name" content="TheSupperClub">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:url" content="https://thesupperclubsc.com">
-
-	<!--	 Stylesheets	 -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
-	<link href="assets/css/demo.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
-	<link href="custom_assets/css/style.css" rel="stylesheet" />
-
-
-	<!--     Fonts and icons     -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-	<link href="assets/css/nucleo-icons.css" rel="stylesheet">
-
-</head>
+		<title>USC's Supper Club</title>
+		<meta charset="utf-8" />
+		<!--  Change link icon to supper club's icon-->
+		<link rel="icon" type="image/png" href="custom_assets/img/supper_club_logo_KsU_icon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="viewport" content="width=device-width" />
+		<meta property="og:title" content="The Supper Club USC">
+		<meta property="og:description" content="The Supper Club is USC's club for LA foodies. Explore LA and dine with us.">
+		<meta property="og:image" content="custom_assets/img/supper_club_logo_KsU_icon.ico">
+		<meta property="og:site_name" content="TheSupperClub">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:url" content="https://thesupperclubsc.com">
+	
+		<!--	 Stylesheets	 -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+		<link href="assets/css/demo.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	
+		<link href="custom_assets/css/style.css" rel="stylesheet" />
+	
+	
+		<!--     Fonts and icons     -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./assets/css/nucleo-icons.css" rel="stylesheet">
+	
+	</head>
 <body>
-<!--    Navbar here    -->     
+    
 <nav class="navbar navbar-scope navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
 	<div class="container">
 		<div class="navbar-translate">
@@ -78,31 +76,25 @@
 		</div>
 	</nav>
 	
-	<div class="wrapper">
-		<div class="section text-center landing-section page-header page-header-white" id ="section-yelp-search" data-parallax="true" style="background-image: url('custom_assets/img/wooden.jpg');">
-            <div class="container"> 
-                <h2 class="title"><strong>Suggestions?</strong></h2>
-                <h5 class="title"><strong>Powered by</strong><img style="margin-bottom:8px;"height="60px" width="80px" src="assets/Yelp_trademark_RGB_outline.png"></h5>
-	                <form name="suggestion" method="POST" action="/suggest">
-						<div class="form-group">
-						    <label><strong>Find</strong></label>
-						    <input type="text" class="form-control" name="term" id="validationDefault01" placeholder="restaurants, tacos, pizza, kbbq, FOOD..."/>
-						 </div>
-						 <div class="form-group">
-						    <label><strong>Location</strong></label>
-						    <input type="text" class="form-control" name="location" id="validationDefault02" placeholder="address, neighborhood, state, zip..."/>
-						  </div>
-					     <div class="form-group">
-					      	<input id="search_btn" type="submit" class="btn btn-scope"/><!-- Search</button> -->
-					     </div>
-					  </div>
-					</form>
-				</div>
-            </div>
+	<div class="section page-header-white text-center" data-parallax="true">
+		<div class="container justify-content-center align-items-center"></br>
+			<h2 class="title"><strong>Suggestions?</strong></h2>
+			<h5 class="title"><strong>Powered by</strong><img style="margin-bottom:8px;"height="60px" width="80px" src="../assets/Yelp_trademark_RGB_outline.png"></h5>
+				<form name="suggestion" method="POST" action="/suggest" >
+					<div class="form-group">
+						<label><strong>Find</strong></label>
+						<input type="text" class="form-control" name="term" placeholder="restaurants, tacos, pizza, kbbq, FOOD...">
+					 </div>
+					 <div class="form-group">
+						<label><strong>Location</strong></label>
+						<input type="text" class="form-control" name="location" placeholder="address, neighborhood, state, zip...">
+					  </div>	
+					 <div class="form-group">
+						  <input id="search_btn" type="submit" class="btn btn-scope"/>
+				  </div>
+				</form>
         </div>
    </div>
-
-</div>
 
 <!-- Core JS Files -->
 <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
